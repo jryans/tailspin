@@ -18,7 +18,7 @@ Tailspin currently passes 99.9% of the [ECMAScript Language test262](http://test
 Reversibility
 ------------
 
-Tailspin is able to run in a reversible mode, where state changes are recorded so that they can be undone, compared to the non-revsersible mode this is slightly slower and uses more memory.
+Tailspin is able to run in a reversible mode, where state changes are recorded so that they can be undone, compared to the non-reversible mode this is slightly slower and uses more memory.
 
 In reversible mode almost all state changes can be undone. Some state changes such as `Object.freeze()` and `Object.seal()` are not reversible as Tailspin uses the host runtime's Javascript objects and the effect of these functions is permanent.
 
